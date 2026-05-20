@@ -1,0 +1,17 @@
+#oops Encapulation
+class ATM:
+    def __init__(self, pin, balance):
+        self.__pin = pin
+        self.__balance = balance
+
+    def show_balance(self):
+        print("Balance is", self.__balance)
+
+    def change_pin(self, new_pin):
+        self.__pin = new_pin
+        print("PIN changed successfully")
+
+
+a1 = ATM(1234, 5000)
+a1.show_balance()
+a1.change_pin(5678)
